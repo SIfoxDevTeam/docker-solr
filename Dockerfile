@@ -2,7 +2,7 @@
 FROM lefan/centos
 MAINTAINER Alexey Larin <Alexey.I.Larin@gmail.com>
 
-ENV SOLR_VERSION 4.10.4
+ENV SOLR_VERSION 5.2.0
 
 RUN yum install -y tar \
                    wget
