@@ -19,4 +19,6 @@ EXPOSE 8983
 
 WORKDIR /opt/apache/solr
 
+VOLUME ["/opt/apache/solr/server/solr"]
 
+CMD ["/bin/bash", "-c", "/opt/solr/bin/solr -f"]
