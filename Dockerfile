@@ -5,7 +5,8 @@ MAINTAINER Alexey Larin <Alexey.I.Larin@gmail.com>
 ENV SOLR_VERSION 5.2.0
 
 RUN yum install -y tar \
-                   wget
+                   wget \
+                   unzip
 
 RUN mkdir -p /opt/apache && \
     wget -q -O - http://apache-mirror.rbc.ru/pub/apache/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz | \
